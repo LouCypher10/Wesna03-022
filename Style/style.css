@@ -1,0 +1,101 @@
+:root {
+  --blue: #a7a2f7;
+  --dark: #453f99;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+}
+
+#banner img {
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #453f99;
+}
+
+#wesnaLogo {
+  background: linear-gradient(to right top, var(--dark), var(--blue));
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+#wesnaLogo:hover {
+  cursor: pointer;
+}
+
+#headerText {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ol a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+ol a:visited {
+  color: white;
+}
+
+ol > li {
+  color: white;
+  padding: 5px;
+  width: 250px;
+  border: 1px solid #000;
+  margin: 10px;
+  border-radius: 10px;
+  background: #a7a2f7;
+}
+
+#navbar {
+  font-size: 20px;
+}
+
+.footer {
+  background: linear-gradient(to right top, var(--dark), var(--blue));
+  border-radius: 10px;
+}
+
+#fb {
+  margin-top: 6%;
+}
+
+#adress {
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.order {
+  border: solid 1px #000;
+  margin: 5% 0%;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+#rights {
+  font-size: 12px;
+}
