@@ -20,15 +20,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Style/style.css" type="text/css" />
-    <title>Wesna-Probud - Główna</title>
+    <link rel="stylesheet" href="../Style/style.css" type="text/css" />
+    <title>Wesna-Probud - kontakt</title>
   </head>
 
   <body>
     <div class="container my-5">
       <div class="row border-bottom border-2 border-dark">
-        <div class="col-sm-12 col-md-6 my-2" id="wesnaLogo"><a href="www.wesna.pl">
-          "Wesna-Probud" Sp. z o.o.</a>
+        <div class="col-sm-12 col-md-6 my-2" id="wesnaLogo">
+          <a href="www.wesna.pl"> "Wesna-Probud" Sp. z o.o.</a>
         </div>
         <div class="col-sm-12 col-md-6" id="headerText">
           Produkcja słodkich kremów i polew cukierniczych<br />
@@ -42,7 +42,7 @@
         <div class="col">
           <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Strona główna</a>
+              <a class="navbar-brand" href="../index.html">Strona główna</a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -51,25 +51,28 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="collapsibleNavbar"
+              >
                 <ul class="navbar-nav">
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Polewy</a>
+                    <a class="nav-link" href="../Polewy/index.html">Polewy</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Kremy</a>
+                    <a class="nav-link" href="../Kremy/index.html">Kremy</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Bloki</a>
+                    <a class="nav-link" href="../Bloki/index.html">Bloki</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Wafle</a>
+                    <a class="nav-link" href="../Wafle/index.html">Wafle</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Ciastka</a>
+                    <a class="nav-link" href="../Ciastka/index.html">Ciastka</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Usługi</a>
+                    <a class="nav-link" href="../Uslugi/index.html">Usługi</a>
                   </li>
                   <li class="nav-item mx-2">
                     <a class="nav-link" href="#">Kontakt</a>
@@ -82,18 +85,65 @@
       </div>
       <div class="row my-5">
         <div class="col-12" id="banner">
-          <img src="Img/waffle.jpg" class="img-fluid" alt="Wafelek" />
+          <img src="../Img/waffle.jpg" class="img-fluid" alt="Wafelek" />
         </div>
       </div>
       <!--Treść-->
-      <div class="row">
-        <div class="col"></div>
+      <div class="row footer my-5">
+        <div class="row my-5">
+          <div class="col-lg-6 my-4">
+            <div id="adress">
+              "Wesna-Probud" Sp. z o.o.<br />
+              Prusy k/Jakubowic<br />
+              27-530 Ożarów<br />
+              NIP 524 00 18 901<br /><br />
+            </div>
+            <div class="col-12 d-sm-none d-md-block googlemap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.7752440995055!2d21.69794781593013!3d50.81680276878001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722b0882b886541%3A0x2c546d0e5bb315b0!2sWesna-Probud%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1646255378081!5m2!1spl!2spl"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 my-5">
+            <div id="adress">
+              Informacje i zamówienia<br />Od poniedziałku do piątku<br />w
+              godzinach: 07:00 - 15:00
+            </div>
+            <div class="order mx-3">Kremy, polewy, bloki, usługi<br>tel. 504 210 833<br>e-mail: wesna_probud@vp.pl </div>
+            <div class="order mx-3">Ciastka i wafle<br>tel. 506 153 083<br>e-mail: interfood@vis.pl</div>
+            <div class="order mx-3">Technolog produkcji<br>tel. 500 176 433</div>
+          </div>
+        </div>
+          <!--form begins-->
+        <div class="row justify-content-center my-4"> 
+            <div class="col-sm-12 col-lg-7">
+            <form id="contactform" action="https://formsubmit.io/send/wesna_probud@vp.pl" method="POST">
+              <input name="name" class="form-control my-3" type="text" id="name" placeholder="Podaj swoje imię">
+              <input name="email" class="form-control my-3" type="email" id="email" placeholder="Wpisz swój e-mail">
+              <textarea name="comment" class="form-control my-3" id="comment" rows="3" placeholder="Wpisz treść wiadomości"></textarea>
+          
+              <input name="_formsubmit_id" type="text" style="display:none">
+              <input name="_redirect" type="hidden" id="name" value="http://wesna.pl/index.html">
+              <input class="btn btn-outline-dark" value="Wyślij" type="submit">
+            </form>
+           </div>
+        </div>
       </div>
+   
       <!--Koniec treści-->
       <div class="row footer">
         <div class="col-md-3" id="fb">
           <a href="https://www.facebook.com/WesnaProbud"
-            ><img src="Img/IKONA-FB.png" width="150px" height="150px" alt="FB"
+            ><img
+              src="../Img/IKONA-FB.png"
+              width="150px"
+              height="150px"
+              alt="FB"
           /></a>
         </div>
         <div class="col-md-3" id="adress">
